@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{%include 'page_title.html'%}
+<h1>Hello {{name}}</h1>
+<ul>
+    {%for a in list%}
+        {%if a%2 == 0%}
+            <li>Even {{a}}</li>
+        {%else%}
+            <li>Odd {{a}}</li>
+        {%endif%}
+    {%endfor%}
+</ul>
+</body>
+</html>
